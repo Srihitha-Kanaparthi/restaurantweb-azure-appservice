@@ -94,12 +94,13 @@ WSGI_APPLICATION = 'azureproject.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.environ.get('AZURE_POSTGRESQL_NAME'),
-        'HOST': os.environ.get('AZURE_POSTGRESQL_HOST'),
-        'USER': os.environ.get('AZURE_POSTGRESQL_USER'),
-        'PASSWORD': os.environ.get('AZURE_POSTGRESQL_PASSWORD'),
+        'NAME': os.environ.get('DBNAME'),
+        'HOST': os.environ.get('DBHOST'),
+        'USER': os.environ.get('DBUSER'),
+        'PASSWORD': os.environ.get('DBPASS'),
     }
 }
+
 
 
 # Password validation
